@@ -1,12 +1,4 @@
 'use strict';
-const menuButton=document.querySelector('.menu-toggle');
-const navigation=document.querySelector('.nav');
-function closeMenu(){menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Abrir menu');navigation.classList.remove('open')}
-menuButton.addEventListener('click',()=>{const isOpen=menuButton.getAttribute('aria-expanded')==='true';menuButton.setAttribute('aria-expanded',String(!isOpen));menuButton.setAttribute('aria-label',isOpen?'Abrir menu':'Fechar menu');navigation.classList.toggle('open',!isOpen)});
-navigation.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
-document.addEventListener('keydown',event=>{if(event.key==='Escape')closeMenu()});
-document.addEventListener('click',event=>{if(!event.target.closest('.header'))closeMenu()});
-window.matchMedia('(min-width:651px)').addEventListener('change',closeMenu);
 document.querySelectorAll('.service').forEach(detail=>detail.addEventListener('toggle',()=>{if(detail.open)document.querySelectorAll('.service').forEach(other=>{if(other!==detail)other.open=false})}));
 document.querySelectorAll('.filter').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(other=>{const active=other===button;other.classList.toggle('active',active);other.setAttribute('aria-pressed',String(active))});document.querySelectorAll('.plugin-card').forEach(card=>{card.hidden=button.dataset.filter!=='todos'&&card.dataset.category!==button.dataset.filter})}));
 document.querySelectorAll('[data-interest]').forEach(link=>link.addEventListener('click',()=>{document.querySelector('#interest').value=link.dataset.interest}));
