@@ -42,6 +42,10 @@
     if (a.dataset.siteMenu === current) a.setAttribute('aria-current', 'page');
     else a.removeAttribute('aria-current');
   });
+  const languageLink = head.querySelector('a[hreflang="en"]');
+  if (languageLink) languageLink.href = 'https://mylearn.space' + (path === '/' ? '/' : (path.endsWith('.html') ? path : path + '/'));
+  const privacy = document.querySelector('[data-open-privacy]');
+  if (privacy && !document.querySelector('#privacy-dialog')) privacy.addEventListener('click', () => { window.location.href = '/#contato'; });
   const back = document.querySelector('[data-studio-back-top]');
   if (back && path !== '/') back.setAttribute('href', '/');
 })();

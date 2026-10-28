@@ -9,3 +9,5 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,t
 input[type=range]{accent-color:#477d64}input:not([type=range]):focus,textarea:focus,select:focus{border-color:#175b7e;box-shadow:0 0 0 3px rgba(23,91,126,.12)}
 @media(max-width:1020px){.header-shell{min-height:78px;width:calc(100% - 40px)}.main-nav{background:#f8f9f5}.nav-toggle{background:#fff}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+.studio-image-fallback{display:grid;place-items:center;min-height:160px;padding:18px;text-align:center;color:#657980;background:#eff3ed;border:1px dashed #c8d4cc;border-radius:12px;font:600 13px/1.6 'DM Sans',sans-serif}
