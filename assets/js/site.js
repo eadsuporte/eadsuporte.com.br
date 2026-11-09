@@ -57,10 +57,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 item.classList.remove("is-selected");
             });
             card.classList.add("is-selected");
-            selectedInput.value = card.dataset.upgradePackage;
-            selectedText.textContent = "Selected package: " + card.dataset.upgradeLabel;
-            warning.classList.add("is-hidden");
-            document.querySelector("#upgrade-form").scrollIntoView({ behavior: "smooth", block: "start" });
+            if (selectedInput) selectedInput.value = card.dataset.upgradePackage;
+            if (selectedText) selectedText.textContent = "Pacote selecionado: " + card.dataset.upgradeLabel;
+            if (warning) warning.classList.add("is-hidden");
+            const contactSection = document.querySelector("#upgrade-form, #service-form");
+            if (contactSection) contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
         });
     });
     if (upgradeForm) {

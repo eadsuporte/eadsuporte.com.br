@@ -107,27 +107,13 @@
     </div>
 </section><section class="section" id="upgrade-form">
     <div class="container narrow">
-        <form action="https://admin.mylearn.space/sites-send-mail.php" class="form-card upgrade-form" data-upgrade-form="" method="post">
-            <input name="form_type" type="hidden" value="upgrade">
-            <input data-selected-upgrade="" name="upgrade_package" type="hidden" value="">
-            <div class="section-heading left">
-                <h2>Conte-nos sobre sua plataforma atual</h2>
-                <p>Preencha seus dados e entraremos em contato para confirmar e agendar sua atualiza&ccedil;&atilde;o.</p>
-            </div>
-            <div class="selected-package" data-selected-upgrade-text="">Nenhum pacote selecionado ainda.</div>
-            <p class="validation-note" data-upgrade-warning="">Selecione um pacote de atualiza&ccedil;&atilde;o acima antes de
-                enviar.</p>
-            <div class="form-grid two">
-                <label>Nome completo *<input name="full_name" placeholder="Maria Silva" required="" type="text" value=""></label>
-                <label>Endere&ccedil;o de e-mail *<input name="email" placeholder="maria@exemplo.com" required="" type="email" value=""></label>
-                <label>N&uacute;mero de telefone<input name="phone" placeholder="+61 4xx xxx xxx" type="tel" value=""></label>
-                <label>Organiza&ccedil;&atilde;o / Institui&ccedil;&atilde;o<input name="organisation" placeholder="Universidade de..." type="text" value=""></label>
-            </div>
-            <label>URL atual do Software Moodle&trade;<input name="moodle_url" placeholder="https://moodle.seusite.edu.au" type="url" value=""></label>
-            <label>Observa&ccedil;&otilde;es adicionais<textarea name="notes" placeholder="Vers&atilde;o atual do Software Moodle&trade;, n&uacute;mero de usu&aacute;rios, plugins personalizados, janela de atualiza&ccedil;&atilde;o preferida..." rows="4"></textarea></label>
-            <button class="btn btn-primary btn-full" type="submit">Enviar solicita&ccedil;&atilde;o de atualiza&ccedil;&atilde;o &rarr;</button>
-            <p class="small-center">Responderemos em at&eacute; 1 dia &uacute;til. Para solicita&ccedil;&otilde;es urgentes, ligue <a href="tel:+5541996906673">+55(41) 9 9690-6673</a>.</p>
-        </form>
+        <div class="form-card ead-contact-cta">
+    <div class="ead-contact-cta__content"><h2>Conte-nos sobre sua plataforma atual</h2>
+      <p>Converse com nossa equipe pelo WhatsApp, e-mail ou telefone, sem preencher formulários.</p>
+      <p class="ead-contact-cta__selected selected-package" data-selected-upgrade-text>Escolha um pacote acima ou fale com nossa equipe.</p>
+    </div>
+    <button class="ead-contact-button" type="button" data-contact-open>Fale conosco <span aria-hidden="true">↗</span></button>
+  </div>
     </div>
 </section>
 </main>
