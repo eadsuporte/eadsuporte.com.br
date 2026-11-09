@@ -78,3 +78,21 @@ button.ead-contact-button[data-contact-open] span{font-size:20px;flex:none}
 body.ead-contact-active{overflow:hidden}
 @media(max-width:600px){.ead-contact-action{min-height:0}button.ead-contact-button[data-contact-open]{width:100%;padding:14px 18px}.ead-contact-dialog{border-radius:19px}.ead-contact-dialog__head{padding:20px 20px 0}.ead-contact-dialog__body{padding:10px 20px 24px}.ead-contact-dialog .ead-contact-dialog__option{min-height:76px;padding:12px}.ead-contact-dialog__icon{width:40px;height:40px}}
 @media(prefers-reduced-motion:reduce){button.ead-contact-button[data-contact-open],.ead-contact-dialog .ead-contact-dialog__option{transition:none}}
+
+/* Tipografia compartilhada mais legivel - novembro de 2026 */
+.studio-site-nav>a:not(.button){font:650 14px/1.5 'Manrope',sans-serif}
+.studio-site-footer__top p{font-size:15px}
+.studio-site-footer__back{font-size:14px}
+.studio-site-footer__nav a{font-size:14px}
+.studio-site-footer__bottom{font-size:12px}
+.ead-contact-dialog__eyebrow{font-size:12px}
+.ead-contact-dialog__context,.ead-contact-dialog__note{font-size:13px!important}
+.ead-contact-dialog__option-text strong{font-size:16px}
+.ead-contact-dialog__option-text small{font-size:14px}
+@media(max-width:1190px){
+  .studio-site-nav>a:not(.button){font-size:16px}
+}
+@media(max-width:650px){
+  .studio-site-footer__top p{font-size:14px}
+  .studio-site-footer__bottom{font-size:11px}
+}
