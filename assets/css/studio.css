@@ -7,3 +7,64 @@
 
 .studio-pricing{margin-block:58px 65px;padding:52px clamp(24px,4vw,60px);border:1px solid #dce3dd;border-radius:16px;background:#eaf0e8;display:flex;gap:50px;align-items:center;justify-content:space-between}.studio-pricing__copy{max-width:720px}.studio-pricing h2{margin:14px 0 16px;font-size:clamp(28px,3vw,41px)}.studio-pricing h2 em{font-family:Georgia,serif;font-weight:400;color:#477d64}.studio-pricing p{max-width:650px;margin:0;font-size:13px;line-height:1.85;color:#657980}.studio-pricing__actions{display:flex;flex-direction:column;gap:18px;align-items:flex-start;flex-shrink:0}@media(max-width:850px){.studio-pricing{flex-direction:column;align-items:flex-start;gap:22px}.studio-pricing__actions{flex-direction:row;flex-wrap:wrap;align-items:center}}@media(max-width:650px){.studio-pricing{margin-block:30px 45px;padding:32px 20px}.studio-pricing__actions .button{font-size:11px}}
 .studio-section-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px 32px;padding:15px 0 23px;border-bottom:1px solid #dce3dd}.studio-section-nav a{font:600 12px/1.4 'DM Sans',sans-serif;color:#23566a;text-decoration:none}.studio-section-nav a:hover{text-decoration:underline;text-underline-offset:4px}@media(max-width:650px){.studio-section-nav{justify-content:flex-start;gap:12px 18px}.studio-section-nav a{font-size:11px}}
+
+/* Legibilidade dos conteudos - novembro de 2026 */
+body{line-height:1.6}
+.eyebrow{font-size:11px}
+.button,.text-link{font-size:14px}
+.hero-note{font-size:12px}
+.benefit-strip>span{font-size:11px}
+.benefit-strip>span strong{font-size:12px}
+.benefit-strip>div{font-size:13px}
+.section-top>p,.section-top>div+p,.section-top>div:last-child>p{font-size:16px;line-height:1.75}
+.photo-tag{font-size:10px}
+.service summary{padding-block:28px;gap:16px}
+.service-number{font-size:12px;font-weight:700}
+.service h3{font-size:clamp(19px,1.5vw,22px);font-weight:600;line-height:1.4;letter-spacing:-.45px}
+.service-body p{font-size:16px;line-height:1.75}
+.service-body .tags span{font-size:12px;padding:7px 12px;line-height:1.4}
+.service-link{font-size:14px;font-weight:700;line-height:1.5}
+.platform-copy p{font-size:16px;line-height:1.75}
+.platform-features{font-size:12px}
+.catalog-link{font-size:14px}
+.filter{font-size:12px}
+.filter>span{font-size:11px}
+.category{font-size:11px}
+.plugin-info p{font-size:15px;line-height:1.7}
+.step{font-size:14px}
+.process-grid p{font-size:16px;line-height:1.75}
+.faq-section .text-link{font-size:14px}
+.faq-list summary{font-size:18px;line-height:1.5}
+.faq-list p{font-size:16px;line-height:1.75}
+.contact-copy>p,.contact-email{font-size:16px}
+.contact-phone{font-size:15px}
+.contact-location{font-size:12px}
+.contact-form label{font-size:13px}
+.contact-form input,.contact-form textarea,.contact-form select{font-size:15px}
+.contact-form input::placeholder,.contact-form textarea::placeholder{font-size:14px}
+.contact-form .button,.form-status{font-size:14px}
+.form-note{font-size:12px}
+.footer-main>p{font-size:13px}
+.footer-bottom,.footer-bottom>button{font-size:11px}
+.studio-pricing p{font-size:16px;line-height:1.75}
+.studio-section-nav a{font:650 14px/1.5 'Manrope',sans-serif}
+@media(max-width:650px){
+  .eyebrow{font-size:10px}
+  .hero-actions .button,.hero-actions .text-link{font-size:13px}
+  .hero-note{font-size:11px}
+  .section-top>p,.section-top>div+p,.section-top>div:last-child>p{font-size:15px}
+  .service summary{padding-block:24px;gap:12px}
+  .service h3{font-size:18px;line-height:1.4}
+  .service-number{font-size:11px}
+  .service-body{padding-right:10px}
+  .service-body p{font-size:15px}
+  .service-body .tags span{font-size:11px}
+  .service-link{font-size:14px}
+  .platform-copy p,.process-grid p,.faq-list p,.contact-copy>p{font-size:15px}
+  .faq-list summary{font-size:17px}
+  .plugin-info p{font-size:14px}
+  .contact-email{font-size:15px}
+  .contact-form input,.contact-form textarea,.contact-form select{font-size:16px}
+  .studio-section-nav a{font-size:13px}
+  .studio-pricing__actions .button{font-size:13px}
+}
