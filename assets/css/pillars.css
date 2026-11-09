@@ -161,3 +161,13 @@
     font-size: 12px;
   }
 }
+
+/* Leitura dos pilares - novembro de 2026 */
+.studio-pillars__intro > p{font-size:16px;line-height:1.75}
+.studio-pillars__label{font-size:12px}
+.studio-pillars__content p{font-size:16px;line-height:1.75}
+@media(max-width:650px){
+  .studio-pillars__intro > p{font-size:15px}
+  .studio-pillars__label{font-size:11px}
+  .studio-pillars__content p{font-size:15px}
+}
