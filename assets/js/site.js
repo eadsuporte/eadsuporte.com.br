@@ -59,6 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
             card.classList.add("is-selected");
             if (selectedInput) selectedInput.value = card.dataset.upgradePackage;
             if (selectedText) selectedText.textContent = "Pacote selecionado: " + card.dataset.upgradeLabel;
+            const contactButton = document.querySelector("#upgrade-form [data-contact-open]");
+            if (contactButton) contactButton.dataset.interest = card.dataset.upgradeLabel;
             if (warning) warning.classList.add("is-hidden");
             const contactSection = document.querySelector("#upgrade-form, #service-form");
             if (contactSection) contactSection.scrollIntoView({ behavior: "smooth", block: "start" });

@@ -50,18 +50,12 @@
 @media(prefers-reduced-motion:reduce){.studio-site-nav>a::after,.studio-nav-toggle span{transition:none}}
 
 
-/* Botões de contato e popup compartilhado (PT-BR). */
-.ead-contact-cta{box-sizing:border-box;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:20px;width:100%;padding:clamp(26px,4vw,42px);background:linear-gradient(150deg,#f4faf7,#fff 67%);border:1px solid #dce8e4;border-radius:22px;box-shadow:0 14px 38px rgba(18,59,80,.07);color:#153b4c;font-family:'DM Sans',sans-serif;text-align:left}
-.ead-contact-cta__content{width:100%}
-.ead-contact-cta__content h2,.ead-contact-cta__content h3{margin:0 0 12px;color:#153b4c;font-family:inherit;font-size:clamp(23px,2.5vw,32px);line-height:1.22;font-weight:700;letter-spacing:-.025em}
-.ead-contact-cta__content p{margin:0;color:#526b73;font:400 15px/1.7 'DM Sans',sans-serif}
-.ead-contact-cta__content .selected-package,.ead-contact-cta__selected{margin-top:16px;padding:12px 16px;background:#edf4ef;border:1px solid #d7e5da;border-radius:10px;font-size:13px;color:#315e55}
-.ead-contact-cta .ead-contact-button{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;min-height:52px;padding:13px 22px;background:#153f52!important;color:#fff!important;border:1px solid #153f52!important;border-radius:12px;font:700 15px/1.4 'DM Sans',sans-serif!important;text-decoration:none;cursor:pointer;transition:background .15s ease,transform .15s ease}
-.ead-contact-cta .ead-contact-button:hover{background:#22617a!important;transform:translateY(-1px)}
-.ead-contact-cta .ead-contact-button:focus-visible,.ead-contact-dialog button:focus-visible,.ead-contact-dialog a:focus-visible{outline:3px solid #b8d972;outline-offset:4px}
-.ead-contact-cta .ead-contact-button span{font-size:20px}
-.ead-contact-cta.contact-form{height:100%;min-height:260px}
-.ead-contact-cta.lp-form{min-height:260px}
+/* Botões diretos de contato e popup compartilhado (PT-BR). */
+.ead-contact-action{display:flex;align-items:center;justify-content:center;min-width:0;min-height:110px}
+button.ead-contact-button[data-contact-open]{display:inline-flex;align-items:center;justify-content:space-between;gap:16px;max-width:100%;min-height:54px;padding:15px 24px;background:#153f52;color:#fff;border:1px solid #153f52;border-radius:12px;font:700 15px/1.45 'DM Sans',sans-serif;text-align:left;cursor:pointer;transition:background .15s ease,transform .15s ease}
+button.ead-contact-button[data-contact-open]:hover{background:#22617a;transform:translateY(-1px)}
+button.ead-contact-button[data-contact-open]:focus-visible,.ead-contact-dialog button:focus-visible,.ead-contact-dialog a:focus-visible{outline:3px solid #b8d972;outline-offset:4px}
+button.ead-contact-button[data-contact-open] span{font-size:20px;flex:none}
 .ead-contact-dialog{position:fixed;inset:0;box-sizing:border-box;width:min(520px,calc(100vw - 30px));max-width:520px;max-height:min(720px,calc(100dvh - 24px));margin:auto;padding:0;border:1px solid #e0e9e5;border-radius:24px;background:#fff;color:#153b4c;box-shadow:0 26px 90px rgba(11,35,48,.28);font-family:'DM Sans',sans-serif;overflow:auto}
 .ead-contact-dialog::backdrop{background:rgba(8,27,38,.64);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
 .ead-contact-dialog__head{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:24px 28px 0}
@@ -82,5 +76,5 @@
 .ead-contact-dialog__arrow{font-size:20px;color:#497665}
 .ead-contact-dialog__note{font-size:12px!important;color:#71828a!important}
 body.ead-contact-active{overflow:hidden}
-@media(max-width:600px){.ead-contact-dialog{border-radius:19px}.ead-contact-dialog__head{padding:20px 20px 0}.ead-contact-dialog__body{padding:10px 20px 24px}.ead-contact-cta{padding:24px}.ead-contact-dialog .ead-contact-dialog__option{min-height:76px;padding:12px}.ead-contact-dialog__icon{width:40px;height:40px}}
-@media(prefers-reduced-motion:reduce){.ead-contact-cta .ead-contact-button,.ead-contact-dialog .ead-contact-dialog__option{transition:none}}
+@media(max-width:600px){.ead-contact-action{min-height:0}button.ead-contact-button[data-contact-open]{width:100%;padding:14px 18px}.ead-contact-dialog{border-radius:19px}.ead-contact-dialog__head{padding:20px 20px 0}.ead-contact-dialog__body{padding:10px 20px 24px}.ead-contact-dialog .ead-contact-dialog__option{min-height:76px;padding:12px}.ead-contact-dialog__icon{width:40px;height:40px}}
+@media(prefers-reduced-motion:reduce){button.ead-contact-button[data-contact-open],.ead-contact-dialog .ead-contact-dialog__option{transition:none}}
