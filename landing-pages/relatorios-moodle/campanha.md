@@ -1,4 +1,4 @@
-# Campanha — Relatórios Moodle com Kopere BI
+# Campanha - Relatórios Moodle com Kopere BI
 
 > **Planejamento inicial, não campanha ativa.** Valores em BRL são premissas hipotéticas para análise, não cotações de CPC, preço comercial aprovado ou garantia de retorno. Este repositório é público.
 

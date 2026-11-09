@@ -1,4 +1,4 @@
-# Landing pages — EaDSuporte
+# Landing pages - EaDSuporte
 
 Estrutura de campanhas planejadas: **12 landing pages de serviços** e **1 landing de plugin (Kopere BI, apresentado como relatórios Moodle)**.
 
