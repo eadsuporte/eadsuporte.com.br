@@ -2,7 +2,7 @@
 .studio-pillars {
   margin-top: 32px;
   padding: 92px 0 98px;
-  background: linear-gradient(135deg, #edf3ed 0%, #e6eeea 100%);
+  background: linear-gradient(135deg, #eaf2ff 0%, #e2edff 100%);
 }
 .studio-pillars__layout {
   display: grid;
@@ -16,7 +16,7 @@
   padding-top: 16px;
 }
 .studio-pillars__intro .eyebrow {
-  color: #467469;
+  color: #30488a;
 }
 .studio-pillars__intro h2 {
   max-width: 520px;
@@ -26,7 +26,7 @@
   letter-spacing: -2.5px;
 }
 .studio-pillars__intro h2 em {
-  color: #417e65;
+  color: #324a8d;
   font-family: Georgia, serif;
   font-weight: 400;
   letter-spacing: -1.8px;
@@ -34,7 +34,7 @@
 .studio-pillars__intro > p {
   max-width: 435px;
   margin: 0 0 28px;
-  color: #586f72;
+  color: #354e95;
   font-size: 14px;
   line-height: 1.85;
 }
@@ -45,24 +45,24 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  border-top: 1px solid #c3d2cb;
+  border-top: 1px solid #b5c6e0;
 }
 .studio-pillars__item {
   display: grid;
   grid-template-columns: 58px minmax(0, 1fr);
   gap: 21px;
   padding: 30px 0;
-  border-bottom: 1px solid #c3d2cb;
+  border-bottom: 1px solid #b5c6e0;
 }
 .studio-pillars__icon {
   display: grid;
   place-items: center;
   width: 54px;
   height: 54px;
-  border: 1px solid #bfd2ca;
+  border: 1px solid #b3c4de;
   border-radius: 14px;
-  background: #f8fbf5;
-  color: #216d7b;
+  background: #f7faff;
+  color: #21397b;
 }
 .studio-pillars__icon svg {
   width: 26px;
@@ -70,11 +70,11 @@
   stroke-width: 1.45;
 }
 .studio-pillars__item:nth-child(even) .studio-pillars__icon {
-  color: #487d65;
+  color: #334c92;
 }
 .studio-pillars__label {
   display: block;
-  color: #66847b;
+  color: #3d5bad;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 1.35px;
@@ -91,7 +91,7 @@
 .studio-pillars__content p {
   max-width: 475px;
   margin: 0;
-  color: #62777b;
+  color: #3956a4;
   font-size: 13px;
   line-height: 1.8;
 }
